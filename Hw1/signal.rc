@@ -1,0 +1,95 @@
+Magic 271485
+Revision Verdi_Q-2020.03
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 1680 23 1920 1017 149 1
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/112/penguin72777/Hw1/N26120579/build/top.fsdb" "/home/112/penguin72777/Hw1/N26120579/build/top.fsdb.fsdb"
+
+openDirFile -d / "" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; active file:
+activeDirFile "" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb"
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 6623844.004667 6646912.941544
+cursor 4675500.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 16
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+addGroup "G1"
+activeDirFile "" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb"
+addSignal -h 15 /top_tb/TOP/CPU1/clk
+addSignal -h 15 -holdScope D_pc[31:0]
+addSignal -h 15 -holdScope inst[31:0]
+addSignal -h 15 -holdScope E_jb_pc[31:0]
+addGroup "G2"
+addSignal -h 15 /top_tb/TOP/CPU1/DM_wen[3:0]
+addSignal -h 15 -holdScope DM_addr[13:0]
+addSignal -h 15 -holdScope DM_in[31:0]
+addSignal -h 15 -holdScope DM_out[31:0]
+addGroup "G3"
+addSignal -h 15 /top_tb/TOP/CPU1/E_alu_rs1_data[31:0]
+addSignal -h 15 -holdScope E_alu_rs2_data[31:0]
+addSignal -h 15 -holdScope E_alu_out[31:0]
+addSignal -h 15 -holdScope E_rd[4:0]
+addSignal -h 15 -holdScope E_rs1[4:0]
+addSignal -h 15 -holdScope E_rs2[4:0]
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/top_tb"
+"/top_tb/TOP"
+"/top_tb/TOP/CPU1"
+
+SCOPE_LIST_BEGIN
+"/top_tb"
+"/top_tb/TOP"
+"/top_tb/TOP/CPU1"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
+activeDirFile "" "/home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb"
+
+

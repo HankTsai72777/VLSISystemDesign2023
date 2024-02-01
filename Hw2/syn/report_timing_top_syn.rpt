@@ -1,0 +1,105 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06
+Date   : Wed Nov  1 14:24:18 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cpu/CPU1/MEM/data_width_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpu/CPU1/EXE/alu_out_reg_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  CPU                enG100K               fsa0m_a_generic_core_ss1p62v125c
+  WB                 enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  EXE                enG50K                fsa0m_a_generic_core_ss1p62v125c
+  ALU                enG30K                fsa0m_a_generic_core_ss1p62v125c
+  ALU_DW_mult_uns_1  enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  cpu/CPU1/MEM/data_width_reg_reg[1]/CK (QDFFRBP)         0.00 #     1.00 r
+  cpu/CPU1/MEM/data_width_reg_reg[1]/Q (QDFFRBP)          0.43       1.43 r
+  cpu/CPU1/MEM/data_width_reg[1] (MEM)                    0.00       1.43 r
+  cpu/CPU1/WB/data_width[1] (WB)                          0.00       1.43 r
+  cpu/CPU1/WB/U128/O (INV4)                               0.08       1.52 f
+  cpu/CPU1/WB/U106/O (XOR2HP)                             0.18       1.70 f
+  cpu/CPU1/WB/U87/O (ND2F)                                0.10       1.80 r
+  cpu/CPU1/WB/U82/O (ND2T)                                0.09       1.89 f
+  cpu/CPU1/WB/U91/O (AN2P)                                0.36       2.25 f
+  cpu/CPU1/WB/U135/O (AOI22S)                             0.22       2.47 r
+  cpu/CPU1/WB/U80/O (ND2S)                                0.09       2.56 f
+  cpu/CPU1/WB/U16/O (MUX2S)                               0.37       2.93 f
+  cpu/CPU1/WB/WB_data[0] (WB)                             0.00       2.93 f
+  cpu/CPU1/U20/O (BUF4)                                   0.26       3.19 f
+  cpu/CPU1/EXE/WB_data[0] (EXE)                           0.00       3.19 f
+  cpu/CPU1/EXE/U148/O (AO22)                              0.34       3.53 f
+  cpu/CPU1/EXE/U169/O (OR2B1P)                            0.25       3.78 f
+  cpu/CPU1/EXE/a0/rs2[0] (ALU)                            0.00       3.78 f
+  cpu/CPU1/EXE/a0/U27/O (BUF6)                            0.18       3.96 f
+  cpu/CPU1/EXE/a0/U135/O (BUF6)                           0.30       4.26 f
+  cpu/CPU1/EXE/a0/mult_18/b[0] (ALU_DW_mult_uns_1)        0.00       4.26 f
+  cpu/CPU1/EXE/a0/mult_18/U3358/O (INV2)                  0.69       4.95 r
+  cpu/CPU1/EXE/a0/mult_18/U4411/O (OAI22S)                0.25       5.20 f
+  cpu/CPU1/EXE/a0/mult_18/U1255/CO (FA1)                  0.43       5.63 f
+  cpu/CPU1/EXE/a0/mult_18/U2989/S (FA1S)                  0.46       6.08 f
+  cpu/CPU1/EXE/a0/mult_18/U3041/CO (FA1S)                 0.51       6.59 f
+  cpu/CPU1/EXE/a0/mult_18/U1238/CO (FA1)                  0.39       6.98 f
+  cpu/CPU1/EXE/a0/mult_18/U1229/S (FA1)                   0.55       7.53 f
+  cpu/CPU1/EXE/a0/mult_18/U3557/O (OR2P)                  0.24       7.77 f
+  cpu/CPU1/EXE/a0/mult_18/U3175/O (AOI12HS)               0.21       7.98 r
+  cpu/CPU1/EXE/a0/mult_18/U3846/O (OAI12HS)               0.16       8.13 f
+  cpu/CPU1/EXE/a0/mult_18/U2661/O (AOI12H)                0.21       8.34 r
+  cpu/CPU1/EXE/a0/mult_18/U2660/O (INV2)                  0.07       8.41 f
+  cpu/CPU1/EXE/a0/mult_18/U2657/O (ND2P)                  0.11       8.52 r
+  cpu/CPU1/EXE/a0/mult_18/U2658/O (ND2P)                  0.09       8.61 f
+  cpu/CPU1/EXE/a0/mult_18/U3478/O (AOI12HP)               0.21       8.82 r
+  cpu/CPU1/EXE/a0/mult_18/U3475/O (OAI12HP)               0.14       8.96 f
+  cpu/CPU1/EXE/a0/mult_18/U4753/O (AOI12HT)               0.20       9.16 r
+  cpu/CPU1/EXE/a0/mult_18/U4777/O (INV8)                  0.07       9.22 f
+  cpu/CPU1/EXE/a0/mult_18/U3435/O (INV12CK)               0.10       9.32 r
+  cpu/CPU1/EXE/a0/mult_18/U2607/O (OAI12HP)               0.07       9.39 f
+  cpu/CPU1/EXE/a0/mult_18/U4766/O (XNR2HS)                0.15       9.55 f
+  cpu/CPU1/EXE/a0/mult_18/product[60] (ALU_DW_mult_uns_1)
+                                                          0.00       9.55 f
+  cpu/CPU1/EXE/a0/U311/O (AO222)                          0.50      10.05 f
+  cpu/CPU1/EXE/a0/U160/O (OR2T)                           0.22      10.27 f
+  cpu/CPU1/EXE/a0/U262/O (NR3HT)                          0.14      10.42 r
+  cpu/CPU1/EXE/a0/U24/O (ND2P)                            0.07      10.49 f
+  cpu/CPU1/EXE/a0/alu_out[28] (ALU)                       0.00      10.49 f
+  cpu/CPU1/EXE/U380/O (MUX2)                              0.29      10.79 f
+  cpu/CPU1/EXE/alu_out_reg_reg[28]/D (QDFFRBN)            0.00      10.79 f
+  data arrival time                                                 10.79
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.10      10.90
+  cpu/CPU1/EXE/alu_out_reg_reg[28]/CK (QDFFRBN)           0.00      10.90 r
+  library setup time                                     -0.11      10.79
+  data required time                                                10.79
+  --------------------------------------------------------------------------
+  data required time                                                10.79
+  data arrival time                                                -10.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

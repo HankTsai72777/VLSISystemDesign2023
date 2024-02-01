@@ -1,0 +1,101 @@
+Loading db file '/usr/cad/CBDK/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/112/penguin72777/Hw3/cpu_v2_hw3/sim/SRAM/SRAM_WC.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: Q-2019.12
+Date   : Tue Jan 23 17:06:43 2024
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /usr/cad/CBDK/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM_WC (File: /home/112/penguin72777/Hw3/cpu_v2_hw3/sim/SRAM/SRAM_WC.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+top                    enG1000K          fsa0m_a_generic_core_ss1p62v125c
+CPU_wrapper            enG50K            fsa0m_a_generic_core_ss1p62v125c
+AXI                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_1         enG500K           fsa0m_a_generic_core_ss1p62v125c
+ROM_wrapper            enG5K             fsa0m_a_generic_core_ss1p62v125c
+DRAM_wrapper           enG5K             fsa0m_a_generic_core_ss1p62v125c
+SC_wrapper             enG30K            fsa0m_a_generic_core_ss1p62v125c
+WDT_wrapper            enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu                    enG50K            fsa0m_a_generic_core_ss1p62v125c
+AXIMaster_1            enG5K             fsa0m_a_generic_core_ss1p62v125c
+sensor_ctrl            enG30K            fsa0m_a_generic_core_ss1p62v125c
+WDT                    enG5K             fsa0m_a_generic_core_ss1p62v125c
+AXIMaster_0            enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_0         enG500K           fsa0m_a_generic_core_ss1p62v125c
+WDT_DW_cmp_0           enG5K             fsa0m_a_generic_core_ss1p62v125c
+WDT_DW01_inc_0_DW01_inc_8
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+DRAM_wrapper_DW01_add_0
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+ROM_wrapper_DW01_inc_0_DW01_inc_12
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_0_DW01_inc_0_DW01_inc_13
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_0_DW01_inc_1_DW01_inc_14
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_1_DW01_inc_0_DW01_inc_15
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+SRAM_wrapper_1_DW01_inc_1_DW01_inc_16
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_add_3_DW01_add_4
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_add_4_DW01_add_5
+                       enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW_mult_tc_1       enG10K            fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_cmp2_1        enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_inc_2         enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_inc_3         enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_sub_1         enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_add_5         enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_cmp6_1        enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_add_6         enG5K             fsa0m_a_generic_core_ss1p62v125c
+cpu_DW01_add_7         enG5K             fsa0m_a_generic_core_ss1p62v125c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 110.4713 mW   (98%)
+  Net Switching Power  =   2.1263 mW    (2%)
+                         ---------
+Total Dynamic Power    = 112.5976 mW  (100%)
+
+Cell Leakage Power     =   1.2536 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory            95.6183        4.9805e-02        1.2171e+09           96.8853  (  85.10%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          14.4368        9.9651e-02        1.5833e+07           14.5523  (  12.78%)
+sequential         0.0000            0.0000        6.6420e+03        6.6420e-06  (   0.00%)
+combinational      0.4169            1.9770        2.0610e+07            2.4145  (   2.12%)
+--------------------------------------------------------------------------------------------------
+Total            110.4720 mW         2.1264 mW     1.2536e+09 pW       113.8520 mW
+1

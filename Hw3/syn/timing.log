@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: Q-2019.12
+Date   : Tue Jan 23 17:06:41 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: CP1/CPU1/E_alu_rs2_sel_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CP1/CPU1/M_alu_out_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  cpu                enG50K                fsa0m_a_generic_core_ss1p62v125c
+  cpu_DW_mult_tc_1   enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  CP1/CPU1/E_alu_rs2_sel_reg/CK (QDFFRBN)                 0.00 #     1.00 r
+  CP1/CPU1/E_alu_rs2_sel_reg/Q (QDFFRBN)                  0.57       1.57 f
+  CP1/CPU1/U331/O (BUF1)                                  0.41       1.98 f
+  CP1/CPU1/U2111/O (INV1S)                                0.23       2.22 r
+  CP1/CPU1/U2110/O (INV1S)                                1.24       3.46 f
+  CP1/CPU1/U5637/O (MUX2)                                 0.71       4.17 r
+  CP1/CPU1/U496/O (INV4CK)                                0.18       4.35 f
+  CP1/CPU1/U5711/O (AN2)                                  0.28       4.63 f
+  CP1/CPU1/mult_597/b[7] (cpu_DW_mult_tc_1)               0.00       4.63 f
+  CP1/CPU1/mult_597/U2993/O (BUF1CK)                      0.23       4.86 f
+  CP1/CPU1/mult_597/U3179/O (XNR2H)                       0.22       5.09 f
+  CP1/CPU1/mult_597/U2984/O (BUF2)                        0.35       5.44 f
+  CP1/CPU1/mult_597/U2731/O (ND2F)                        0.17       5.60 r
+  CP1/CPU1/mult_597/U3046/O (BUF2CK)                      0.42       6.02 r
+  CP1/CPU1/mult_597/U4212/O (OAI22S)                      0.18       6.19 f
+  CP1/CPU1/mult_597/U1339/CO (FA1)                        0.45       6.64 f
+  CP1/CPU1/mult_597/U1326/CO (FA1)                        0.40       7.03 f
+  CP1/CPU1/mult_597/U2813/S (FA1S)                        0.46       7.49 f
+  CP1/CPU1/mult_597/U2850/CO (FA1S)                       0.49       7.99 f
+  CP1/CPU1/mult_597/U2858/S (FA1S)                        0.68       8.66 r
+  CP1/CPU1/mult_597/U2898/S (FA1S)                        0.53       9.20 f
+  CP1/CPU1/mult_597/U2916/S (FA1S)                        0.69       9.89 r
+  CP1/CPU1/mult_597/U2943/O (OR2)                         0.26      10.15 r
+  CP1/CPU1/mult_597/U3389/O (ND2)                         0.15      10.30 f
+  CP1/CPU1/mult_597/U3388/O (NR2)                         0.23      10.53 r
+  CP1/CPU1/mult_597/U2977/O (AOI12H)                      0.17      10.70 f
+  CP1/CPU1/mult_597/U2983/O (OAI12HP)                     0.22      10.93 r
+  CP1/CPU1/mult_597/U2976/O (AOI12HP)                     0.11      11.04 f
+  CP1/CPU1/mult_597/U3304/O (OAI12H)                      0.23      11.27 r
+  CP1/CPU1/mult_597/U3008/O (INV1S)                       0.15      11.42 f
+  CP1/CPU1/mult_597/U3007/O (BUF4CK)                      0.22      11.64 f
+  CP1/CPU1/mult_597/U3023/O (OA12S)                       0.30      11.94 f
+  CP1/CPU1/mult_597/U3243/O (XNR2HS)                      0.18      12.12 f
+  CP1/CPU1/mult_597/product[36] (cpu_DW_mult_tc_1)        0.00      12.12 f
+  CP1/CPU1/U282/O (AOI22S)                                0.26      12.38 r
+  CP1/CPU1/U6539/O (OR3B2)                                0.15      12.53 f
+  CP1/CPU1/U6540/O (OR3)                                  0.26      12.80 f
+  CP1/CPU1/M_alu_out_reg[4]/D (QDFFRBS)                   0.00      12.80 f
+  data arrival time                                                 12.80
+
+  clock clk (rise edge)                                  12.00      12.00
+  clock network delay (ideal)                             1.00      13.00
+  clock uncertainty                                      -0.10      12.90
+  CP1/CPU1/M_alu_out_reg[4]/CK (QDFFRBS)                  0.00      12.90 r
+  library setup time                                     -0.10      12.80
+  data required time                                                12.80
+  --------------------------------------------------------------------------
+  data required time                                                12.80
+  data arrival time                                                -12.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: WD0/WD0/D0_reg
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: WD0/WD0/D0_reg
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  WDT                enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                   0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  WD0/WD0/D0_reg/CK (QDFFN)                0.00       1.00 r
+  WD0/WD0/D0_reg/Q (QDFFN)                 0.36       1.36 f
+  WD0/WD0/U48/O (NR2)                      0.17       1.53 r
+  WD0/WD0/D0_reg/D (QDFFN)                 0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk2 (rise edge)                 100.00     100.00
+  clock network delay (ideal)              1.00     101.00
+  clock uncertainty                       -0.10     100.90
+  WD0/WD0/D0_reg/CK (QDFFN)                0.00     100.90 r
+  library setup time                      -0.09     100.81
+  data required time                                100.81
+  -----------------------------------------------------------
+  data required time                                100.81
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                        99.28
+
+
+1

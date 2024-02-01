@@ -1,0 +1,98 @@
+ 
+****************************************
+Report : qor
+Design : top
+Version: Q-2019.12
+Date   : Tue Jan 23 17:06:44 2024
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              33.00
+  Critical Path Length:         11.80
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     12.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk2'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.53
+  Critical Path Slack:          99.28
+  Critical Path Clk Period:    100.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         32
+  Hierarchical Port Count:       4768
+  Leaf Cell Count:              25187
+  Buf/Inv Cell Count:            5640
+  Buf Cell Count:                2919
+  Inv Cell Count:                2721
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     20798
+  Sequential Cell Count:         4389
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   374913.503987
+  Noncombinational Area:
+                        250452.722988
+  Buf/Inv Area:          57333.829821
+  Total Buffer Area:         38178.81
+  Total Inverter Area:       19155.02
+  Macro/Black Box Area:
+                       5344494.500000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:           5969860.726975
+  Design Area:         5969860.726975
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         26064
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: node2.ee.ncku.edu.tw
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    8.80
+  Logic Optimization:                 29.91
+  Mapping Optimization:               48.61
+  -----------------------------------------
+  Overall Compile Time:               93.86
+  Overall Compile Wall Clock Time:    96.54
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

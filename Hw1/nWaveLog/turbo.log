@@ -1,0 +1,8 @@
+Command Line: /opt/EDA/verdi/cur/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux node2.ee.ncku.edu.tw 3.10.0-1160.76.1.el7.x86_64 #1 SMP Wed Aug 10 16:21:17 UTC 2022 x86_64)
+Disabled AskUser3 Message (Response 0): /home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb exists, overwrite it ?
+Disabled AskUser3 Message (Response 0): /home/112/penguin72777/Hw1/N26120579/build/top.fsdb.fsdb exists, overwrite it ?
+Disabled AskUser3 Message (Response 0): /home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb exists, overwrite it ?
+Disabled AskUser3 Message (Response 0): /home/112/penguin72777/Hw1/N26120579/build/top.fsdb.fsdb exists, overwrite it ?
+Disabled AskUser3 Message (Response 0): /home/112/penguin72777/Hw1/N26XXXXXX_V1.2/build/top.fsdb.fsdb exists, overwrite it ?
+au time 8300.446968 71.216445 68.085063 delta 436334592 436334592 total 884576256 884576256
